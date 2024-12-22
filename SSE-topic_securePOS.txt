@@ -1,0 +1,13 @@
+SECURE POS
+- Application => raw inputs:
+  (1) *transactionCloud => UUID, transactionTimestamp&AmountSequence (timestamp,amount)
+  (2) *networkMonitor => UUID, transactionEndPointSequence(targetIP, destIP)
+  (3) localizationSys => UUID, location (longitude|latitude)
+- Output:
+  (4) labels => UUID, attackRiskLevel (normal, moderate, high)
+- Features (net input)
+  (a) Mean absolute differencing transaction timestamps
+  (b) Mean absolute differencing transaction amount
+  (c) Median longitude|latitude
+  (d) Median targetIP
+  (e) Median destIP 
