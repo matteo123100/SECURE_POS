@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "properties": {
+    "training_set": {
+      "$ref": "#/definitions/dataset"
+    },
+    "validation_set": {
+      "$ref": "#/definitions/dataset"
+    },
+    "test_set": {
+      "$ref": "#/definitions/dataset"
+    }
+  },
+  "definitions" : {
+    "feature": {
+      "type": "object",
+      "properties": {
+        "median_long": {
+          "type": "number"
+        },
+        "median_lat": {
+          "type": "number"
+        },
+        "mean_abs_diff_ts": {
+          "type": "number"
+        },
+        "mean_abs_diff_am": {
+          "type": "number"
+        },
+        "median_targetIP": {
+          "type": "number"
+        },
+        "median_destIP": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "median_long",
+        "median_lat",
+        "mean_abs_diff_ts",
+        "mean_abs_diff_am",
+        "median_targetIP",
+        "median_destIP"
+      ]
+    },
+    "dataset" : {
+      "type": "object",
+      "properties": {
+        "features": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/feature"
+          }
+        },
+        "labels": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "required": ["features","labels"]
+    }
+  },
+  "required": [
+    "training_set",
+    "validation_set",
+    "test_set"
+  ]
+}

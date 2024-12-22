@@ -1,0 +1,1 @@
+Folder for file dumps of fitted models

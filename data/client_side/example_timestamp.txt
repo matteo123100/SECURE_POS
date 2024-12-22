@@ -1,0 +1,11 @@
+{
+  "system": "ingestion_system",
+  "type": "raw_session",
+  "time": 25
+}
+
+types:
+  -ingestion_system:    raw_session     prepared_session
+  -segregation_system:  session         learning_set
+  -development_system:  development
+  -production_system:   deployment      classification

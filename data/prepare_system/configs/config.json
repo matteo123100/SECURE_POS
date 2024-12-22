@@ -1,0 +1,12 @@
+{
+  "threshold": 0.4,
+  "ev_phase": false,
+  "dev_phase": true,
+  "indirizzo_test" : "http://192.168.97.2:5555/",
+  "indirizzo_ev" : "http://192.168.97.250:8001",
+  "indirizzo_segr" : "http://192.168.97.250:5003/",
+  "indirizzo_prod" :"http://192.168.97.180:5000/upload_session",
+  "testing" : true
+
+
+}

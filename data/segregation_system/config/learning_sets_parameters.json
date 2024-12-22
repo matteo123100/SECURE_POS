@@ -1,0 +1,5 @@
+{
+  "trainPercentage": 0.7,
+  "validationPercentage": 0.1,
+  "testPercentage": 0.2
+}

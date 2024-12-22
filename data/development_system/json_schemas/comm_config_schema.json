@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "ip_address": {
+      "type": "string",
+      "format": "ipv4",
+      "examples": [
+        "0.0.0.0"
+      ],
+      "pattern": "^.*$"
+    },
+    "port": {
+      "type": "integer"
+    },
+    "production_system_url": {
+      "type": "string",
+      "examples": [
+        "http://25.20.54.175:8000/classifier_model"
+      ],
+      "pattern": "^.*$"
+    }
+  },
+  "required": [
+    "ip_address",
+    "port",
+    "production_system_url"
+  ]
+}

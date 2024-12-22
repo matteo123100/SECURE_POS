@@ -1,0 +1,5 @@
+{
+  "ip_address": "192.168.97.185",
+  "port": 5001,
+  "production_system_url": "http://192.168.97.180:5000/upload_model"
+}

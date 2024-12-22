@@ -1,0 +1,11 @@
+{
+    "approved": true,
+    "uncovered_features_suggestions": {
+        "median_longitude": "",
+        "median_latitude": "",
+        "mean_diff_time": "",
+        "mean_diff_amount": "",
+        "median_targetIP": "",
+        "median_destIP": ""
+    }
+}

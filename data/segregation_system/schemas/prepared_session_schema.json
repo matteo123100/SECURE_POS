@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "UUID": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "mean_abs_diff_ts": {
+      "type": "number"
+    },
+    "mean_abs_diff_am": {
+      "type": "number"
+    },
+    "median_long": {
+      "type": "number"
+    },
+    "median_lat": {
+      "type": "number"
+    },
+    "median_targetIP": {
+      "type": "string"
+    },
+    "median_destIP": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "UUID",
+    "label",
+    "mean_abs_diff_ts",
+    "mean_abs_diff_am",
+    "median_long",
+    "median_lat",
+    "median_targetIP",
+    "median_destIP"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "DEVELOPMENT",
+  "testing": true,
+  "repetitions": 3,
+  "required_rows": 150,
+  "ip_address": "192.168.97.2",
+  "port": 5555,
+  "ingestion_system_url": "http://192.168.97.85:5001/run"
+}

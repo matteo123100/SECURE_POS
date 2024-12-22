@@ -1,0 +1,1 @@
+In this folder there are json schemas for json validation

@@ -1,0 +1,8 @@
+{
+    "sessionNumber": 150,
+    "operationMode": "wait_sessions",
+    "developmentSystemEndpoint": "http://192.168.97.185:5001/",
+    "segregationSystemIpAddress": "192.168.97.250",
+    "segregationSystemPort": 5003,
+    "checkServerEndpoint": "http://192.168.97.250:5003/health"
+}
