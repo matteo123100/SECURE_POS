@@ -1,0 +1,13 @@
+digraph "packages" {
+rankdir=BT
+charset="utf-8"
+"prepare_system" [color="black", label=<prepare_system>, shape="box", style="solid"];
+"prepare_system.IngestionSystemConfig" [color="black", label=<prepare_system.IngestionSystemConfig>, shape="box", style="solid"];
+"prepare_system.IngestionSystemOrchestrator" [color="black", label=<prepare_system.IngestionSystemOrchestrator>, shape="box", style="solid"];
+"prepare_system.PreparedSession" [color="black", label=<prepare_system.PreparedSession>, shape="box", style="solid"];
+"prepare_system.RawSession" [color="black", label=<prepare_system.RawSession>, shape="box", style="solid"];
+"prepare_system" -> "prepare_system.IngestionSystemOrchestrator" [arrowhead="open", arrowtail="none"];
+"prepare_system.IngestionSystemOrchestrator" -> "prepare_system.IngestionSystemConfig" [arrowhead="open", arrowtail="none"];
+"prepare_system.IngestionSystemOrchestrator" -> "prepare_system.PreparedSession" [arrowhead="open", arrowtail="none"];
+"prepare_system.IngestionSystemOrchestrator" -> "prepare_system.RawSession" [arrowhead="open", arrowtail="none"];
+}
